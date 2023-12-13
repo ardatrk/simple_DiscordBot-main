@@ -1,0 +1,49 @@
+{
+   "botsettings": {
+     "token": ""
+   },
+
+   "leave": {
+    "channelid": "",
+
+    "embed": {
+      "title": "Bye, %user%",
+      "description": "%user% has leaved the Server!",
+      "color": "Random",
+      "image": "",
+      "thumbnail": "https://cdn.discordapp.com/avatars/848248238866825246/fb334c0257d1f0285f45c632092bae8c.webp?size=1024&format=webp&width=0&height=256",
+      "timestamp": true,
+      
+      "author": {
+        "name": "arda.xyz",
+        "iconURL": "https://cdn.discordapp.com/avatars/848248238866825246/fb334c0257d1f0285f45c632092bae8c.webp?size=1024&format=webp&width=0&height=256"
+      },
+      "footer": {
+        "text": "arda.xyz",
+        "iconURL": "https://cdn.discordapp.com/avatars/848248238866825246/fb334c0257d1f0285f45c632092bae8c.webp?size=1024&format=webp&width=0&height=256"
+      }
+    }
+   },
+
+   "welcome": {
+    "channelid": "",
+
+    "embed": {
+      "title": "Welcome, %user%",
+      "description": "%user% has joined the Server!",
+      "color": "Random",
+      "image": "",
+      "thumbnail": "https://cdn.discordapp.com/avatars/848248238866825246/fb334c0257d1f0285f45c632092bae8c.webp?size=1024&format=webp&width=0&height=256",
+      "timestamp": true,
+      
+      "author": {
+        "name": "arda.xyz",
+        "iconURL": "https://cdn.discordapp.com/avatars/848248238866825246/fb334c0257d1f0285f45c632092bae8c.webp?size=1024&format=webp&width=0&height=256"
+      },
+      "footer": {
+        "text": "arda.xyz",
+        "iconURL": "https://cdn.discordapp.com/avatars/848248238866825246/fb334c0257d1f0285f45c632092bae8c.webp?size=1024&format=webp&width=0&height=256"
+      }
+    }
+   }
+}
