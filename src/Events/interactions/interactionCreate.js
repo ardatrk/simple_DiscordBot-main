@@ -1,5 +1,3 @@
-const {} = require("discord.js")
-
 module.exports = {
 	 name: "interactionCreate",
   
@@ -8,16 +6,18 @@ module.exports = {
 		  const command = client.commands.get(interaction.commandName);
   
 		  if (!command) {
-			 interaction.reply({
-				content: "outdated command",
+				interaction.reply({
+					content: "outdated command",
+					ephemeral: true
 			 });
 		  }
 		  try {
 			 command.execute(interaction, client);
 		  } catch (error) {
-			 message.channel.send(
+			 interaction.channel.send({content: 
 				"**Beim Ausführen des Commands ist ein Fehler aufgetreten!**"
-			 );
+				 }, ephemeral: true);
+					return
 		  }
 		}
 	 },
