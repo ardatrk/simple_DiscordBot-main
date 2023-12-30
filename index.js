@@ -9,7 +9,7 @@ const {
     GatewayIntentBits;
   const { User, Message, GuildMember, ThreadMember, Channel } = Partials;
 
-  const { loadEvents, loadCommands } = require("ls_bots.js");
+  const { loadEvents } = require("ls_bots.js");
 
   const client = new Client({
     intents: [Guilds, GuildMembers, GuildMessages, MessageContent],
@@ -22,6 +22,5 @@ const {
   client.login(config.botsettings.token).then(() => {
     client.commands = new Collection();
     loadEvents(client);
-    loadCommands(client);
   });
   
