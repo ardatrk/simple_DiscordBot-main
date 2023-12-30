@@ -5,7 +5,7 @@ const { ActivityType } = require("discord.js");
 	 once: true,
 	 async execute(client) {
 		client.user.setPresence({
-		  activities: [{ name: "arda.xyz", type: ActivityType.Competing }],
+		  activities: [{ name: "https://arda-dev.xyz/", type: ActivityType.Competing }],
 		  status: "dnd",
 		});
 		console.log("Bot Logged in as !")
