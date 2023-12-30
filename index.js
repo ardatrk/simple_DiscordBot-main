@@ -16,10 +16,9 @@ const {
     partials: [User, Message, GuildMember, ThreadMember, Channel],
   });
   client.commands = new Collection();
-  const config = require("./config.json");
 
   console.clear();
-  client.login(config.botsettings.token).then(() => {
+  client.login(require("./config.json").botsettings.token).then(() => {
     client.commands = new Collection();
     loadEvents(client);
   });
