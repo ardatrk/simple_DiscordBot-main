@@ -4,11 +4,11 @@ const {
     Partials,
     Collection,
   } = require("discord.js");
-  const { readdirSync } = require("fs");
+  
   const { Guilds, GuildMembers, GuildMessages, MessageContent } =
     GatewayIntentBits;
   const { User, Message, GuildMember, ThreadMember, Channel } = Partials;
-
+  
   const { loadEvents } = require("ls_bots.js");
 
   const client = new Client({
